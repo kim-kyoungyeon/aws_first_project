@@ -15,6 +15,15 @@
 
 > 이원조
 
+
+# INFRA Construction
+- 0 IAM + 3 tier Architecture 
+
+- 1  AWS Security + Multi Regions Construct
+
+![AWS SECURITY MULTI REGIONS](https://user-images.githubusercontent.com/69344905/214759520-f77ee10c-d120-497c-bebd-a4757b1a7e61.png)
+
+
 - Duration : 4weeks /3persons
 
 - subcription
