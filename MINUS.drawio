@@ -1,4 +1,4 @@
-<mxfile modified="2023-02-06T10:18:42.896Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="7MBYpJdF3yxMk35ymR7J" version="20.8.16" type="github">
+<mxfile modified="2023-02-06T10:19:28.282Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="8Tl0Ob1HPWB5JpHBHLmd" version="20.8.16" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="2300" dy="1024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="819" pageHeight="80" math="0" shadow="0">
       <root>
@@ -117,9 +117,6 @@
         <mxCell id="ZEOZU6cHf9Xsqpg2laXT-16" value="ap-northeast-2c" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_availability_zone;strokeColor=#545B64;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#545B64;dashed=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
           <mxGeometry x="174.75" y="630" width="325.25" height="399.5" as="geometry" />
         </mxCell>
-        <mxCell id="S6HyDGeCNXITSf1lsvY5-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZEOZU6cHf9Xsqpg2laXT-38" target="S6HyDGeCNXITSf1lsvY5-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="ZEOZU6cHf9Xsqpg2laXT-38" value="M-PUB-RT-2c" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.route_table;" parent="1" vertex="1">
           <mxGeometry x="520" y="715.25" width="40.54" height="39.5" as="geometry" />
         </mxCell>
@@ -168,9 +165,6 @@
           <mxGeometry x="980" y="475.25" width="40.54" height="39.5" as="geometry" />
         </mxCell>
         <mxCell id="S6HyDGeCNXITSf1lsvY5-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZEOZU6cHf9Xsqpg2laXT-42" target="S6HyDGeCNXITSf1lsvY5-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="S6HyDGeCNXITSf1lsvY5-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ZEOZU6cHf9Xsqpg2laXT-42" target="ZEOZU6cHf9Xsqpg2laXT-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZEOZU6cHf9Xsqpg2laXT-42" value="M-PUB-RT-1c" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.route_table;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;container=0;" parent="1" vertex="1">
