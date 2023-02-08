@@ -1,5 +1,5 @@
 ---
-name: "[FIX] : ✅ FEATURE"
+name: "[FIX] : ✅ ❌ FEATURE"
 about: 'Fix the problems '
 title: "[BUG]"
 labels: ISSUE
