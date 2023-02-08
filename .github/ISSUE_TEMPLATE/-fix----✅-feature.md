@@ -26,10 +26,10 @@ ISSUE:  ✅❌ FEATURE
 
 
 ## Progress
-- [  ]todo list 
-- [  ]todo list 
-- [  ]todo list 
-- [  ]todo list 
-- [  ]todo list 
+- [ ] todo list
+- [ ] todo list
+- [ ] todo list
+- [ ] todo list
+- [ ] todo list
 
 ## ETC
