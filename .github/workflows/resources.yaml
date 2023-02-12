@@ -85,17 +85,7 @@ jobs:
       with:
         java-version: 1.8
         
-    - name: Beanstalk Deploy
-      uses: einaregilsson/beanstalk-deploy@v14
-      with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID_VAL }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}
-        application_name: m-beans-talk
-        environment_name: Mbeanstalk-env
-        version_label: earth-docker-${{steps.current-time.outputs.formattedTime}}
-        region: ap-northeast-2
-        deployment_package: deploy/deploy.zip
-        wait_for_environment_recovery: 200          
+     
     #
     # Update Image tag to delployment.yaml
     #
