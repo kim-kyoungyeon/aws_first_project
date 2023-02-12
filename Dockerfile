@@ -14,7 +14,7 @@ RUN apk update && apk add python3 python3-dev mariadb-dev build-base && pip3 ins
 # our installed requirements rather than reinstall them on every build
 
 
-FROM ubuntu:18.04.6
+FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get install locales
 
