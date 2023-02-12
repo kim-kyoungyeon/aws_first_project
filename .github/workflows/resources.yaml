@@ -88,10 +88,10 @@ jobs:
     - name: Beanstalk Deploy
       uses: einaregilsson/beanstalk-deploy@v14
       with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: AWS EB 애플리케이션 이름
-        environment_name: AWS EB 환경 이름
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID_VAL }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}
+        application_name: m-beans-talk
+        environment_name: Mbeanstalk-env
         version_label: earth-docker-${{steps.current-time.outputs.formattedTime}}
         region: ap-northeast-2
         deployment_package: deploy/deploy.zip
