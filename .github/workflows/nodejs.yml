@@ -1,0 +1,100 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # Download AWS CLI 2
+      - name: Install AWS CLI 2
+        run: |
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          which aws
+          sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+          
+      # Configure AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_VAL }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # npm install for ci
+      - run: npm ci
+
+      # Build
+      - run: npm run build
+
+      # Unit test
+      - run: npm run test:unit
+
+  deploy:
+    name: BeanStalk Deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+
+      # Initialize Node.js
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # Install project dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Download AWS CLI 2
+      - name: Install AWS CLI 2
+        run: |
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          which aws
+          sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+      # Configure AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_VAL }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Build
+      - name: Run build
+        run: npm run build
+
+      # Make upload zip file
+      - name: Generate deployment package
+        run: zip -r deploy.zip . -x '*.git*' './aws/*' './node_modules/*' './dist/*' awscliv2.zip
+
+      # Deploy to Elastic Beanstalk
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v18
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID_VAL }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_VAL }}
+          application_name: ${{ secrets.APPLICATION_NAME }}
+          environment_name: ${{ secrets.ENVIRONMENT_NAME }}
+          region: ${{ secrets.AWS_REGION }}
+          version_label: ${{github.SHA}}
