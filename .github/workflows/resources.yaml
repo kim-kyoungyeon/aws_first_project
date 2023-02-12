@@ -9,8 +9,7 @@ on:
       - feature/dev4
       
 
-name: 
-Image build & k8s resources.yaml update
+name: Image build & k8s resources.yaml update
 
 jobs:
   deploy:
