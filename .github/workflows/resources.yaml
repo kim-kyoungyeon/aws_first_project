@@ -41,6 +41,7 @@ jobs:
         echo "ENVIRONMENT=dev" >> $GITHUB_ENV
         echo "DESTINATION=dev/aws_first_project" >> $GITHUB_ENV
         echo "BRANCH=feature" >> $GITHUB_ENV
+   
     - name: Set Prod env variables
       if: endsWith(github.ref, '/main')
       run: |
@@ -102,7 +103,7 @@ jobs:
         
     - name: chmod repo destination
       run: |
-        chmod +x $DESTINATION
+        chmod +x 'prod/aws_first_project':
         ls
             
     - name: git push image tag to k8 repo 
