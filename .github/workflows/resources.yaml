@@ -103,7 +103,7 @@ jobs:
         
     - name: chmod repo destination
       run: |
-        chmod +x 'prod/aws_first_project':
+        chmod +x $DESTINATION:
         ls
             
     - name: git push image tag to k8 repo 
