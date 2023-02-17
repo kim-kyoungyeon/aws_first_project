@@ -40,4 +40,4 @@ spec:
         - name: wordpress-persistent-storage
           nfs:
             path: /var/www/html
-            server: fs-06ad8392b29be3a70.efs.ap-northeast-2.amazonaws.com
+            server: fs-0a8ee6d4021e2c2a6.efs.ap-northeast-2.amazonaws.com
