@@ -23,7 +23,7 @@ spec:
           name: wordpress
           env:
             - name: WORDPRESS_DB_HOST
-              value: m-db-cluster-va-instance-1.cd3kkw2animz.us-east-1.rds.amazonaws.com
+              value: m-db-cluster-va-cluster-1.cluster-ro-cd3kkw2animz.us-east-1.rds.amazonaws.com
             - name: WORDPRESS_DB_PASSWORD
               value: 49096041aA
             - name: WORDPRESS_DB_USER
@@ -40,4 +40,4 @@ spec:
         - name: wordpress-persistent-storage
           nfs:
             path: /var/www/html
-            server: fs-023620d7991dbe438.efs.us-east-1.amazonaws.com
+            server: fs-0357aae80d33cc607.efs.us-east-1.amazonaws.com
