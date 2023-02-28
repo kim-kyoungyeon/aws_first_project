@@ -9,11 +9,11 @@
 ## AWS 통한 멀티 리전환경과 하이브리드 클라우드 환경 웹서비스하기
 
 
-- Team Members: 여영돈, 이원조, 김경연 , 황인호
+- Team Members : 여영돈, 이원조, 김경연 , 황인호
 
 - Duration : 4weeks /4persons
 
-- subcription
+- Subcription :
 multi-region & hybrid clouds deployment (with WordPress docker image ) 
 <p align="center">
 <img alt="Html" src ="https://img.shields.io/badge/Kubernetes-326CE5?&style=for-the-badge&logo=Kubernetes&logoColor=white"/>
