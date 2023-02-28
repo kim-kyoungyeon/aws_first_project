@@ -15,6 +15,17 @@
 
 - subcription
 multi-region & hybrid clouds deployment (with WordPress docker image ) 
+<p align="center">
+<img alt="Html" src ="https://img.shields.io/badge/Kubernetes-326CE5?&style=for-the-badge&logo=Kubernetes&logoColor=white"/>
+<img alt="Html" src ="https://img.shields.io/badge/Amazon-232F3E?&style=for-the-badge&logo=Amazon&logoColor=white"/>
+<img alt="Html" src ="https://img.shields.io/badge/Amazon EKS-FF9900?&style=for-the-badge&logo=Amazon EKS&logoColor=white"/>
+<img alt="Html" src ="https://img.shields.io/badge/Amazon EC2-FF9900?&style=for-the-badge&logo=Amazon EC2&logoColor=white"/>
+<img alt="Html" src ="https://img.shields.io/badge/CentOS-262577?&style=for-the-badge&logo=CentOS&logoColor=white"/>
+<img alt="Html" src ="https://img.shields.io/badge/Amazon RDS-527FFF?&style=for-the-badge&logo=Amazon RDS&logoColor=white"/>
+</p>
+
+
+
 
 
 
