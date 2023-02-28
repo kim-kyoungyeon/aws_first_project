@@ -47,7 +47,6 @@ _DevOps + Team Leader_
  Networking Service
   - Contribution <br/>
 : Route53,VPC  
-<br/>
 
 # DEV3
 > 김경연 _DevOps_  
@@ -59,8 +58,6 @@ Computing Service
 Storage Service
   - Contribution <br/>
  : EBS
-
-<br/>
 
 # DEV4
 > 황인호 _DevOps_
