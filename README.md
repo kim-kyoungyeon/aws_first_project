@@ -11,6 +11,11 @@
 
 - Team Members: 여영돈, 이원조, 김경연 , 황인호
 
+- Duration : 4weeks /4persons
+
+- subcription
+multi-region & hybrid clouds deployment (with WordPress docker image ) 
+
 
 
 # DEV1
@@ -59,11 +64,7 @@ Database
 
 - 1  AWS Security 
  
--2 AWS ARCHITECTURE
+- 2 AWS ARCHITECTURE
 ![MINUS drawio](https://user-images.githubusercontent.com/69344905/221841627-0305da07-65c4-4622-bf6a-564fb2d53f58.svg)
 
-- Duration : 4weeks /4persons
-
-- subcription
-multi-region & hybrid clouds deployment (with WordPress web application ) 
 
