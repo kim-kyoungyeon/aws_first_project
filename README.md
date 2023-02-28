@@ -9,47 +9,61 @@
 ## AWS 통한 멀티 리전환경과 하이브리드 클라우드 환경 웹서비스하기
 
 
-- Team Members: 여영돈, 이원조, 김경연
+- Team Members: 여영돈, 이원조, 김경연 , 황인호
 
+
+
+# DEV1
+> 이원조  _DevOps + PO_
+- Target 1 <br/>
+Architecture
+  -  Contribution <br/>
+: Architecture
+- Target 2 <br/>
+Vpc,Vpn
+  - Contribution <br/>
+: MSA, VPN ,ELB, yaml
+
+# DEV2
 > 여영돈 
 _DevOps + Team Leader_
-- Target  <br/>
+- Target 1 <br/>
  Networking Service
-- Contribution <br/>
- Route53,VPC(SG,NACL,IGW,VPN Peering,NAT gateway,Bastion),ELB,CDN  
+  - Contribution <br/>
+: Route53,VPC  
 <br/>
 
-> 김경연 _DevOps+Frontend Leader_
+# DEV3
+> 김경연 _DevOps_  
 - Target 1 <br/>
 Computing Service 
-- Contribution <br/>
-: EC2 , Auto Scaling 
+  - Contribution <br/>
+: EC2 , EKS
 - Target 2 <br/>
 Storage Service
-- Contribution <br/>
- S3,Glacier,EBS
+  - Contribution <br/>
+ : EBS
 
 <br/>
 
-> 이원조  _DevOps + Backend Leader_
+# DEV4
+> 황인호 _DevOps_
 - Target 1 <br/>
-Database Service
--Contribution <br/>
-RDS,DynamoDB
-- Target 2 <br/>
-APIs
-- Contribution <br/>
-MSA  
+Database 
+  -  Contribution <br/>
+: Auora RDS 
+
  
 # INFRA Construction
-- 0 IAM + 3 tier Architecture 
+- 0 IAM 
 
-- 1  AWS Security + Multi Regions Construct
+- 1  AWS Security 
+ 
+-2 AWS ARCHITECTURE
+![MINUS drawio](https://user-images.githubusercontent.com/69344905/221841627-0305da07-65c4-4622-bf6a-564fb2d53f58.svg)
 
-![AWS SECURITY MULTI REGIONS](https://user-images.githubusercontent.com/69344905/214759520-f77ee10c-d120-497c-bebd-a4757b1a7e61.png)
-
-
-- Duration : 4weeks /3persons
+- Duration : 4weeks /4persons
 
 - subcription
-- contribution
+multi-region & hybrid clouds deployment (with WordPress web application ) 
+
