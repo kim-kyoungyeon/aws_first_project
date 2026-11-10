@@ -23,9 +23,12 @@ spec:
           name: wordpress
           env:
             - name: WORDPRESS_DB_HOST
-              value: m-db-cluster-instance-1.ct5ersz6fo73.ap-northeast-2.rds.amazonaws.com
+              value: example-db.cluster-xxxxxxxxxxxx.ap-northeast-2.rds.amazonaws.com
             - name: WORDPRESS_DB_PASSWORD
-              value: 49096041aA
+              valueFrom:
+                secretKeyRef:
+                  name: wordpress-db-secret  # kubectl create secret generic wordpress-db-secret --from-literal=password=<YOUR_PASSWORD>
+                  key: password
             - name: WORDPRESS_DB_USER
               value: admin
             - name: WORDPRESS_DB_NAME
